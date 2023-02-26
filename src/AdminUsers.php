@@ -8,8 +8,8 @@ class AdminUsers extends Extension
 {
     public $name = 'admin-users';
 
-    public $views = dirname(__DIR__) . '/resources/views';
+    public $views = __DIR__ . '/resources/views';
 
-    public $assets = dirname(__DIR__) . '/resources/assets';
+    public $assets = __DIR__ . '/resources/assets';
 
 }
