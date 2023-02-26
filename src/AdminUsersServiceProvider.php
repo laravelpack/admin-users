@@ -28,10 +28,10 @@ class AdminUsersServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
 
             if ($assets = $extension->assets()) {
-/*                $this->publishes(
+                $this->publishes(
                     [$assets => public_path('vendor/laravelpack/admin-users')],
                     'admin-users'
-                );*/
+                );
             }
 
             $this->publishes([__DIR__ . '/../database/migrations' => database_path('migrations')], 'admin-users-migrations');
